@@ -7,9 +7,9 @@
 body
 {
   background-image: url("aron-visuals-bZZp1PmHI0E-unsplash-min.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 .container {
   font-size: 16px;
@@ -122,6 +122,7 @@ p {
 {
   color: red;
   font-size: large;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
@@ -136,4 +137,11 @@ p {
     width: auto;
     max-height: 10.8em;
   }
+}
+
+@media screen and (max-width: 350px) {
+.search-container input
+{
+  width: 80%;
+}
 }

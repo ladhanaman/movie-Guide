@@ -48,5 +48,12 @@ let getMovie = () => {
       });
   }
 };
+
 searchBtn.addEventListener("click", getMovie);
 window.addEventListener("load", getMovie);
+
+movieNameRef.addEventListener("keyup", (e) => {
+  if (e.target.value && e.key === "Enter") {
+    getMovie();
+  }
+});
